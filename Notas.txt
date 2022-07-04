@@ -80,3 +80,15 @@ con git reset --hard {commit más actual}
 15- git revert 4cb71e3
 
 Eliminamos un commit especifico pero se genera otro con una nueva informacion
+
+16- git branch
+
+Para saber en que rama estoy
+
+17- git branch 01-rama
+
+Creamos la rama 01-rama
+
+18- git checkout 01-rama
+
+Viajamos a la rma creada
