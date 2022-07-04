@@ -108,4 +108,26 @@ Mientras que la rama 91-rama tiene además el archivo contact.html commit "conta
 20- git push --set-upstream origin 01-rama
 
 Subimos el código a la rama 01-rama en el origen (repositorio remoto)
-Recordemos que ya no estamos en la rama main sino en la rama 01-rama
+Recordemos que ya no estamos en la rama main sino en la rama 01-rama y que aún no existe la rama 01-rama
+en el rtepositorio remoto
+
+21- Vamos a hacer un merge pero primero tenemos que ver en que rama estamos porque nos tenemos que posicionar
+    en la rama que queremos actualizar. En este caso "main" que esta varios commits por atrás de la
+    rama "01-rama"
+
+    git branch    -->  Vemos en que rama estamos
+    git checkout main   -->  Nos posicionamos en la rama main (es la q vamos a actualizar)
+    git merge 01-rama   -->  Fusionamos, actualizando la rama main con el contenido extra que tiene la rama 01-rama
+                             pero OJO solo en el repositorio local
+    git push  -->  Actualizamos la rama main en el repositorio remoto
+
+    NOTA: Cuando hay un conflicto al momento del merge producto de que en ambas ramas se ha modificado el
+    mismo archivo, lo que se hace es modificar manualmente el archivo para quedarnos con la versión deseada
+    y luego hacer:
+    git add .
+    git commmit -m "fix conflicto en merge"
+
+22- git branch -d 01-rama
+
+Eliminamos la rama 01-rama
+
