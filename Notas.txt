@@ -80,3 +80,4 @@ con git reset --hard {commit más actual}
 15- git revert 4cb71e3
 
 Eliminamos un commit especifico pero se genera otro con una nueva informacion
+
