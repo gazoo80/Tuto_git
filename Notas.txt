@@ -1,0 +1,42 @@
+1- git status -s
+    Los archivos que tenemos hasta el momento en el proyecto (haciéndoles seguimiento)
+
+2- git log --oneline
+    Ver las distintos commits que hemos hecho (versiones)
+
+NOTA: Cuando hacemos un commit sin mensaje nos puede salir una ventana medio extraña. Para salir de ahí:
+Escribir ":q!" pra salir de esa ventana
+
+3- git config --global user.name "mi nombre"
+   git config --global user.email "myemail@example.com"
+
+Registrando de manera local nuestra cuenta de gitHub donde tendremos nuestro repositorio
+(Colocar el correo asociado a gitHub)
+
+4- git remote add origin https://github.com/gazoo80/prueba-git.git
+
+Vinculamos nuestro repositorio local con uno remoto
+
+5- git branch -M master
+
+Rama en la que se va a subir nuestro código
+
+6- git push -u origin master
+
+Enviamos nuestro código a la rama master en el origin (es decir en el repositorio remoto vinculado)
+Es probable que nos aparezca una pequeña ventana para ingresra nuestras credenciales de gitHub para poder
+acceder al repositorio remoto desde nuestra máquina
+
+NOTA: Usando GitHub Pages. En GitHub vamos a Settings / Pages / Seleccionamos el branch donde está
+nuestro código / Save.
+Aparecerá la dirección dond está nuestra página (Sólo material estático)
+
+7- git clone https://github.com/gazoo80/prueba-git.git
+
+Clonamos un proyecto desde el repositorio en GitHub. Con esto resuperamos incluso la información de
+nuestros commits a diferencia de descargarlo como ZIP
+
+8- Para ignorar archivos (no se les hara seguimiento) y no se subirán al repositorio. Crear el
+   archivo .gitignore y colocar ahí el nombre de los archivos y carpetas a ignorar
+
+9- 
