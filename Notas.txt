@@ -81,3 +81,31 @@ con git reset --hard {commit más actual}
 
 Eliminamos un commit especifico pero se genera otro con una nueva informacion
 
+16- git branch
+
+Para saber en que rama estoy
+
+17- git branch 01-rama
+
+Creamos la rama 01-rama
+
+18- git checkout 01-rama
+
+Viajamos a la rma creada
+
+19- git log --oneline --graph
+
+Mas detalle de nuestras ramas
+
+NOTA: Si agregamos un nuevo archivo (contacto.html) y hacemos git log --oneline --graph
+deberia aparecernos algo así:
+* ecebf0d (HEAD -> 01-rama) contacto listo
+* 619950a (origin/main, main) segundo commit
+* a5ab7cf primer commit
+Que indica que la rama main quedó hasta con el segundo commit
+Mientras que la rama 91-rama tiene además el archivo contact.html commit "contact listo"
+
+20- git push --set-upstream origin 01-rama
+
+Subimos el código a la rama 01-rama en el origen (repositorio remoto)
+Recordemos que ya no estamos en la rama main sino en la rama 01-rama
