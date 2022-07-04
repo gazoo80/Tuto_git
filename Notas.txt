@@ -39,4 +39,44 @@ nuestros commits a diferencia de descargarlo como ZIP
 8- Para ignorar archivos (no se les hara seguimiento) y no se subirán al repositorio. Crear el
    archivo .gitignore y colocar ahí el nombre de los archivos y carpetas a ignorar
 
-9- 
+9- git log --oneline
+   Ejm: c4c8adb gitHub Pages
+   git checkout c4c8adb
+
+Solo para revisar lo que habia en un commit especifico (NO para hacer cambios)
+Copiamos el código del commit obtenido com git log --oneline
+y lo utilizamos con checkout
+La cantidad de archivos y su contenido regresa a como estaban hasta el commit "c4c8adb"
+
+Para regresar al ultimo commit (el más reciente) de la rama:
+git checkout {id de ese commit} o {el nombre de la rama}
+git checkout f01352d
+El proyecto regresó a su versión más actual
+
+10- git branch -m master main
+
+Renombramos la rama master a main pero solo para el repositorio actual
+
+11- git config --global init.defaultBranch main
+
+Para cambiar el nombre de master a main de manera global. Otros repositorios que creemos
+ya vendran con la rama main en lugar de master
+
+12- git reset c4c8adb
+
+Regresar a un commit específico, eliminando los commits siguientes a partir de ahí y dejarle de
+dar seguimiento a archivos involucrados en esos commits eliminados (estos archivos NO desaparecen)
+
+13- git reset --hard c4c8adb
+Regresar a un commit específico, eliminando los commits siguientes a partir de ahí y además,
+se eliminan los archivos que no existían hasta el commit al que se regresó (c4c8adb)
+
+14- git reflog
+
+Obtenemos un historial de todos nuestros commits, incluso los que se supone se eliminaron
+con reset --hard. Podemos utlizar el código respectivo para regresar al commit más reciente
+con git reset --hard {commit más actual}
+
+15- git revert 4cb71e3
+
+Eliminamos un commit especifico pero se genera otro con una nueva informacion
