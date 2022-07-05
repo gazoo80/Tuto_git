@@ -131,3 +131,7 @@ en el rtepositorio remoto
 
 Eliminamos la rama 01-rama
 
+23- git pull
+
+Para traer a nuestra rama local los cambios que tenga la rama remota, ya ase porque se hizo un cambio directamente
+en el repositorio remoto (Ejm: archivo README.md) o porque otra persona también está trabajando con la misma rama
